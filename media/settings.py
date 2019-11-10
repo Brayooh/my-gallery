@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'gallery.apps.NewsConfig',
+    'gallery.apps.GalleryConfig',
+    'bootstrap3'
 
 ]
 
@@ -78,9 +79,9 @@ WSGI_APPLICATION = 'media.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.path.join(BASE_DIR, 'db.postgresql'),
+        'NAME': 'tribune',
         'USER': 'brayooh',
-        'PASSWORD': 'brian'
+        'PASSWORD':'brian',
     }
 }
 
