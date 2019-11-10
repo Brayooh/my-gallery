@@ -1,6 +1,6 @@
 from django.conf import settings
 from . import views
-from django.conf import urls
+from django.conf.urls import url
 
 
 
