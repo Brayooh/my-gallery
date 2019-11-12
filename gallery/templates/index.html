@@ -17,16 +17,16 @@
             {% with go=pic.allinfo %}
             <div class="col-md-4">
                 <div class="card mb-4 shadow-sm">
-                    <img src='{{pic.image.url}}' alt="" class="card-img-top" width="100%" height="225">
+                    <img src='{{pic.image.url}}' alt="" class="card-img-top" width="100%" height="225" type="button" class="btn btn-sm btn-outline-primary" id="pic{{pic.id}}"
+                    data-whatever="{{pic.id}}" data-toggle="modal"
+                    data-target="#{{pic.id}}">
                     <div class="card-body">
                         <p1 style="font-size: 15px;">
                             {{ pic.caption }}
                         </p1>
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-primary" id="pic{{pic.id}}"
-                                    data-whatever="{{pic.id}}" data-toggle="modal"
-                                    data-target="#{{pic.id}}">View</button>
+                                 
                             </div>
 
                         </div>
@@ -61,7 +61,7 @@
 
                 <p1 id="imageCaption">{{ pic.caption }}</p1>
                 <p><img style="height: 18px;" src="https://www.stickpng.com/assets/thumbs/588891debc2fc2ef3a1860a2.png"
-                        alt="">
+                        alt="pin">
                     <small>{{ pic.location }}</small></p>
                 <p><small class="text-muted">Posted on: {{pic.pub_date}}</small></p>
                 <a target="_blank" href="{{pic.image.url}}" id="imagedirectlink" class="btn btn-outline-info">view
